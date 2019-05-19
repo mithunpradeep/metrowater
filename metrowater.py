@@ -7,7 +7,7 @@ try:
     tankerSize = sys.argv[2]
     options = webdriver.ChromeOptions()
     options.add_argument('window-size=800x841')
-    # options.add_argument('headless')
+    options.add_argument('headless')
     driver = webdriver.Chrome(executable_path='/usr/local/bin/chromedriver',options=options)
     driver.get('https://www.chennaimetrowater.in/registrationlanding.html')
 
